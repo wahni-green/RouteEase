@@ -1,41 +1,19 @@
-### Route Ease
+# RouteEase - Vehicle Management System
 
-Delivery trips made easy!
+RouteEase is a comprehensive vehicle management system built on the Frappe framework and ERPNext. It streamlines the process of managing sales orders, 
+vehicle allocation, and sales invoicing, automating key tasks to enhance efficiency and accuracy.
+![vms](https://github.com/wahni-green/RouteEase/assets/105106551/b4ca8b89-9749-42d0-8717-4f0cafbe3047)
 
-### Installation
+## Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- **Sales Order Management**: Easily collect and organize sales orders within the system.
+- **Vehicle Allocation**: Efficiently allocate vehicles to sales orders, ensuring timely delivery and optimal resource utilization.
+- **Automatic Sales Invoicing**: Sales invoices are automatically generated based on vehicle allocation, reducing manual efforts and minimizing errors.
+- **Integration with ERPNext**: Seamlessly integrates with ERPNext for a complete enterprise resource planning solution.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app route_ease
-```
+## How it Works
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/route_ease
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-agpl-3.0
+1. **Sales Order Collection**: Start by collecting sales orders within the RouteEase system.
+2. **Vehicle Allocation**: Allocate vehicles to each sales order based on availability and other relevant criteria.
+3. **Automatic Invoicing**: Once vehicles are allocated, sales invoices are automatically generated in ERPNext.
+4. **Monitoring and Reporting**: Track vehicle allocation status, sales performance, and generate reports for analysis and decision-making.
