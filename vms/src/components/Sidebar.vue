@@ -1,5 +1,5 @@
 <template>
-    <aside :class="`${is_expanded ? 'is-expanded': ''}`">
+    <aside v-if="session.isLoggedIn" :class="`${is_expanded ? 'is-expanded' : ''}`">
         <div class="logo">
             <img src="../assets/img/logo.png" alt="Logo" />
         </div>
@@ -18,18 +18,18 @@
                 <span class="material-icons">home</span>
                 <span class="text">Home</span>
             </router-link>
-            <router-link class="button" to="/about">
+            <router-link class="button" to="/allocation">
                 <span class="material-icons">
                     local_shipping
                 </span>
-                <span class="text">About</span>
+                <span class="text">Allocation</span>
             </router-link>
         </div>
 
         <div class="flex"></div>
 
         <div class="menu">
-            <router-link to="/settings" class="button">
+            <router-link to="/" class="button">
                 <span class="material-icons">settings</span>
                 <span class="text">Settings</span>
             </router-link>
@@ -39,6 +39,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { session } from '../data/session'
 
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
 

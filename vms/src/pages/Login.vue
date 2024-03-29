@@ -1,5 +1,5 @@
 <template>
-  <div class="m-3 flex flex-row items-center justify-center h-screen">
+  <div class="w-full m-3 flex flex-row items-center justify-center h-screen">
     <Card title="Login to RouteEase!" class="w-full max-w-md mt-4">
       <form class="flex flex-col space-y-2 w-full" @submit.prevent="submit">
         <Input
@@ -35,3 +35,6 @@ function submit(e) {
   })
 }
 </script>
+
+<style lang="scss">
+</style>
